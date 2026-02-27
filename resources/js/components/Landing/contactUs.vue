@@ -8,9 +8,9 @@
                     <br />
                     darte una atención personalizada.
                 </p>
-                <a href="/Contacto" class="button border-white bg-blue  ">
-                    Llenar formulario
-                </a>
+                <button @click="contactUs" class="button border-white bg-blue  ">
+                    Llenar formulario jejeje
+                </button>
             </div>
         </div>
     </section>
@@ -21,7 +21,23 @@ export default {
     data() {
         return {};
     },
+    methods: {
+        contactUs() {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: "contactUs",
+                page_location: window.location.href,
+            });
+            console.log("Hola mundo");
+            console.log(window.dataLayer);
+            
+            // Si usas vue-router, es mejor usar this.$router.push('/Contacto')
+            // para mantener la experiencia de SPA.
+            window.location.href = "/Contacto";
+        },
+    },
 };
+
 </script>
 <style>
 .bg-contactanos {
