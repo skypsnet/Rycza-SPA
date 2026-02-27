@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "pp-mori";
+    font-weight: 200;
+    src: url("/fonts/ppMori/PPMori-Extralight.woff") format("woff");
+}
+@font-face {
+    font-family: "pp-mori";
+    font-weight: 200;
+    font-style: italic;
+    src: url("/fonts/ppMori/PPMori-ExtralightItalic.woff") format("woff");
+}
+@font-face {
+    font-family: "pp-mori";
+    font-weight: 400;
+    src: url("/fonts/ppMori/PPMori-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "pp-mori";
+    font-weight: 600;
+    src: url("/fonts/ppMori/PPMori-SemiBold.woff") format("woff");
+}
+@font-face {
+    font-family: "pp-mori";
+    font-weight: 600;
+    font-style: italic;
+    src: url("/fonts/ppMori/PPMori-SemiBoldItalic.woff") format("woff");
+}
+
+.pp-mori {
+    font-family: "pp-mori" !important;
+}
+
