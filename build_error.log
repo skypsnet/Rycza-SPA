@@ -1,0 +1,127 @@
+
+> build
+> vite-ssg build
+
+
+[vite-ssg] Build for client...
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+[32m✓[39m 230 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                                     [39m[1m[2m     3.23 kB[22m[1m[22m[2m │ gzip:      1.45 kB[22m
+[2mdist/[22m[32massets/TEXTURA2-gmvTJU8F.svg                   [39m[1m[2m     5.54 kB[22m[1m[22m[2m │ gzip:      2.33 kB[22m
+[2mdist/[22m[32massets/TEXTURAFONDO-BF-628kr.svg               [39m[1m[2m     5.57 kB[22m[1m[22m[2m │ gzip:      2.38 kB[22m
+[2mdist/[22m[32massets/Textura1-BDSCF-FH.svg                   [39m[1m[2m     6.71 kB[22m[1m[22m[2m │ gzip:      1.88 kB[22m
+[2mdist/[22m[32massets/LOGO_RYCZA_BLANCO-BxVWEgyG.svg          [39m[1m[2m     7.05 kB[22m[1m[22m[2m │ gzip:      2.36 kB[22m
+[2mdist/[22m[32massets/server-C8QsTEUL.svg                     [39m[1m[2m     7.42 kB[22m[1m[22m[2m │ gzip:      1.76 kB[22m
+[2mdist/[22m[32massets/imperquimia-Q-s788dl.png                [39m[1m[2m     8.65 kB[22m[1m[22m
+[2mdist/[22m[32massets/ICONO_FB-vVh9Qj3m.svg                   [39m[1m[2m     8.90 kB[22m[1m[22m[2m │ gzip:      5.65 kB[22m
+[2mdist/[22m[32massets/protexa-DAJRo88y.png                    [39m[1m[2m    10.87 kB[22m[1m[22m
+[2mdist/[22m[32massets/terramagna-CeoHEa7U.png                 [39m[1m[2m    13.06 kB[22m[1m[22m
+[2mdist/[22m[32massets/pasa-BcFjgfWt.png                       [39m[1m[2m    14.09 kB[22m[1m[22m
+[2mdist/[22m[32massets/ciudadmayakoba-BtX6J_Vp.png             [39m[1m[2m    15.02 kB[22m[1m[22m
+[2mdist/[22m[32massets/chovatek-CCLjWYus.png                   [39m[1m[2m    15.68 kB[22m[1m[22m
+[2mdist/[22m[32massets/thermotek-CIZnnlf1.png                  [39m[1m[2m    16.12 kB[22m[1m[22m
+[2mdist/[22m[32massets/rolandi-CHOeaLY1.png                    [39m[1m[2m    22.38 kB[22m[1m[22m
+[2mdist/[22m[32massets/isuzu-CmIsljng.png                      [39m[1m[2m    31.75 kB[22m[1m[22m
+[2mdist/[22m[32massets/sedena-C8V8Zk-p.png                     [39m[1m[2m    33.68 kB[22m[1m[22m
+[2mdist/[22m[32massets/ICONO_WHATSAPP-xTvY8AUs.svg             [39m[1m[2m    41.00 kB[22m[1m[22m[2m │ gzip:     30.73 kB[22m
+[2mdist/[22m[32massets/Testimonio1-CtqgzYrt.jpg                [39m[1m[2m    55.10 kB[22m[1m[22m
+[2mdist/[22m[32massets/FONDODEGRADADO-BCdy4gfa.png             [39m[1m[2m    61.99 kB[22m[1m[22m
+[2mdist/[22m[32massets/CISTERNA3--TgJPBve.jpg                  [39m[1m[2m    68.11 kB[22m[1m[22m
+[2mdist/[22m[32massets/LOGO_RYCZA-BYIJ5Dpb.svg                 [39m[1m[2m    70.58 kB[22m[1m[22m[2m │ gzip:     38.32 kB[22m
+[2mdist/[22m[32massets/PROYECTO2-DayxuJCO.jpg                  [39m[1m[2m    73.82 kB[22m[1m[22m
+[2mdist/[22m[32massets/Testimonio3-CzjUjyN-.jpg                [39m[1m[2m    76.51 kB[22m[1m[22m
+[2mdist/[22m[32massets/Acrilico3_rycza-CUZ-Q6bB.jpeg           [39m[1m[2m    83.56 kB[22m[1m[22m
+[2mdist/[22m[32massets/PLECABANNERPRINCIPAL-DVgNXlCc.jpg       [39m[1m[2m    89.11 kB[22m[1m[22m
+[2mdist/[22m[32massets/Testimonio2-_326o-LC.jpg                [39m[1m[2m    95.17 kB[22m[1m[22m
+[2mdist/[22m[32massets/CISTERNA2-Cx-GOYw6.jpg                  [39m[1m[2m   102.48 kB[22m[1m[22m
+[2mdist/[22m[32massets/PROYECTO6-DxL0O9mj.jpg                  [39m[1m[2m   110.79 kB[22m[1m[22m
+[2mdist/[22m[32massets/Termoreductor3_rycza-CaVdnw41.jpg       [39m[1m[2m   119.92 kB[22m[1m[22m
+[2mdist/[22m[32massets/Acrilico2_rycza-y-x53jGE.jpg            [39m[1m[2m   124.55 kB[22m[1m[22m
+[2mdist/[22m[32massets/Termoreductor2_rycza-DEu1tJIJ.jpg       [39m[1m[2m   127.17 kB[22m[1m[22m
+[2mdist/[22m[32massets/AZOTEA2-ruMghBYn.jpg                    [39m[1m[2m   128.28 kB[22m[1m[22m
+[2mdist/[22m[32massets/TERRAZA4-7wxlQTps.jpg                   [39m[1m[2m   141.36 kB[22m[1m[22m
+[2mdist/[22m[32massets/FONDOMATERIALESMOVIL-D1dQYOGD.jpg       [39m[1m[2m   151.01 kB[22m[1m[22m
+[2mdist/[22m[32massets/AZOTEA1-BfZ-9_Xi.jpg                    [39m[1m[2m   158.85 kB[22m[1m[22m
+[2mdist/[22m[32massets/Acrilico_rycza-BEQSCl6k.jpg             [39m[1m[2m   161.65 kB[22m[1m[22m
+[2mdist/[22m[32massets/CISTERNA4-9yiLrIk_.jpg                  [39m[1m[2m   162.33 kB[22m[1m[22m
+[2mdist/[22m[32massets/Termoreductor1_rycza-Bv9QzUt4.jpg       [39m[1m[2m   163.51 kB[22m[1m[22m
+[2mdist/[22m[32massets/AZOTEA4-Du4Cw4XO.jpg                    [39m[1m[2m   169.05 kB[22m[1m[22m
+[2mdist/[22m[32massets/ALBERCA5-DjLxvJpJ.jpg                   [39m[1m[2m   180.16 kB[22m[1m[22m
+[2mdist/[22m[32massets/ALBERCA1-CBIT7Y3a.jpg                   [39m[1m[2m   183.00 kB[22m[1m[22m
+[2mdist/[22m[32massets/BANNER_PRINC-qCwOAmc8.jpg               [39m[1m[2m   192.97 kB[22m[1m[22m
+[2mdist/[22m[32massets/DESPUES_AZOTEA-DeKHjZi4.png             [39m[1m[2m   195.70 kB[22m[1m[22m
+[2mdist/[22m[32massets/PROYECTO3-CmLqIwT3.jpg                  [39m[1m[2m   201.62 kB[22m[1m[22m
+[2mdist/[22m[32massets/ESPEJODEAGUA-D19OQ2-g.jpg               [39m[1m[2m   202.54 kB[22m[1m[22m
+[2mdist/[22m[32massets/TERRAZA2-o12g7NpI.jpg                   [39m[1m[2m   214.31 kB[22m[1m[22m
+[2mdist/[22m[32massets/ALBERCA2-03QcQdSd.jpg                   [39m[1m[2m   216.05 kB[22m[1m[22m
+[2mdist/[22m[32massets/PROYECTO7-DpdZm4zi.jpg                  [39m[1m[2m   216.73 kB[22m[1m[22m
+[2mdist/[22m[32massets/SEDENA-D7gz_PBg.jpg                     [39m[1m[2m   218.93 kB[22m[1m[22m
+[2mdist/[22m[32massets/CISTERNA1-BFwZ2vmY.jpg                  [39m[1m[2m   224.78 kB[22m[1m[22m
+[2mdist/[22m[32massets/TERRAZA1-ZzRcKNtg.jpg                   [39m[1m[2m   228.16 kB[22m[1m[22m
+[2mdist/[22m[32massets/MATERIALESBANNER-ByXsLyaH.png           [39m[1m[2m   232.99 kB[22m[1m[22m
+[2mdist/[22m[32massets/PRODUCTOFINALLLOVIENDO-D6GQ-5Ax.jpg     [39m[1m[2m   235.12 kB[22m[1m[22m
+[2mdist/[22m[32massets/Prefabricado3_rycza-C4l55u_T.jpg        [39m[1m[2m   246.38 kB[22m[1m[22m
+[2mdist/[22m[32massets/footerFondo-CEt1-6Pe.png                [39m[1m[2m   247.38 kB[22m[1m[22m
+[2mdist/[22m[32massets/Cementicio3_rycza-n5j68kdb.jpg          [39m[1m[2m   250.98 kB[22m[1m[22m
+[2mdist/[22m[32massets/Cementicio1_rycza-DXD0DYs5.jpg          [39m[1m[2m   267.42 kB[22m[1m[22m
+[2mdist/[22m[32massets/TERRAMAGNA-Bk9tXmmB.jpg                 [39m[1m[2m   270.55 kB[22m[1m[22m
+[2mdist/[22m[32massets/POLIDEPORTIVO-CQAiKTDp.jpg              [39m[1m[2m   287.05 kB[22m[1m[22m
+[2mdist/[22m[32massets/TERRAZA3-D8oy9yyS.jpg                   [39m[1m[2m   297.87 kB[22m[1m[22m
+[2mdist/[22m[32massets/PROYECTO4-DeHSLfN8.jpg                  [39m[1m[2m   310.80 kB[22m[1m[22m
+[2mdist/[22m[32massets/FOTOBANNERPRINC---c83Lu8.jpg            [39m[1m[2m   311.68 kB[22m[1m[22m
+[2mdist/[22m[32massets/PROYECTO1-DFe8-tt1.jpg                  [39m[1m[2m   317.45 kB[22m[1m[22m
+[2mdist/[22m[32massets/AZOTEA6-DjqeVXGt.jpg                    [39m[1m[2m   317.75 kB[22m[1m[22m
+[2mdist/[22m[32massets/ISUZU2-MQTh_8Wc.png                     [39m[1m[2m   321.36 kB[22m[1m[22m
+[2mdist/[22m[32massets/PROYECTO5-Chtv3Wzz.jpg                  [39m[1m[2m   324.37 kB[22m[1m[22m
+[2mdist/[22m[32massets/SEDENA_ANTES-Bpa6YNq9.png               [39m[1m[2m   324.41 kB[22m[1m[22m
+[2mdist/[22m[32massets/MATERIALESMOVIL-Bzh2BORg.png            [39m[1m[2m   331.12 kB[22m[1m[22m
+[2mdist/[22m[32massets/AZOTEA13-B4YjRJTZ.jpg                   [39m[1m[2m   341.33 kB[22m[1m[22m
+[2mdist/[22m[32massets/AZOTEA11-C0wI1l1B.jpg                   [39m[1m[2m   346.13 kB[22m[1m[22m
+[2mdist/[22m[32massets/AZOTEA9-BL6Ad7ra.jpg                    [39m[1m[2m   361.67 kB[22m[1m[22m
+[2mdist/[22m[32massets/FINALASOLEADO-Ij6N28Bq.jpg              [39m[1m[2m   361.76 kB[22m[1m[22m
+[2mdist/[22m[32massets/FONDOGOTERAS-x2J1lXIj.png               [39m[1m[2m   362.72 kB[22m[1m[22m
+[2mdist/[22m[32massets/BannerContacto-CEhAA9_n.jpg             [39m[1m[2m   387.71 kB[22m[1m[22m
+[2mdist/[22m[32massets/FONDOROJOMOBILE-BluQpNdT.jpg            [39m[1m[2m   394.60 kB[22m[1m[22m
+[2mdist/[22m[32massets/AZOTEA8-D4fXzgzj.jpg                    [39m[1m[2m   395.35 kB[22m[1m[22m
+[2mdist/[22m[32massets/AZOTEA10-Bxb-f0hl.jpg                   [39m[1m[2m   395.46 kB[22m[1m[22m
+[2mdist/[22m[32massets/ANTES_AZOTEA-DCb96pQA.png               [39m[1m[2m   397.23 kB[22m[1m[22m
+[2mdist/[22m[32massets/Prefabricado1_rycza-DZyKMglh.jpg        [39m[1m[2m   404.32 kB[22m[1m[22m
+[2mdist/[22m[32massets/Cementicio2_rycza-C1cDawLr.jpg          [39m[1m[2m   413.63 kB[22m[1m[22m
+[2mdist/[22m[32massets/AZOTEA3-0m24ULHo.jpg                    [39m[1m[2m   449.13 kB[22m[1m[22m
+[2mdist/[22m[32massets/Prefabricado2_rycza-Dik74glI.jpg        [39m[1m[2m   464.44 kB[22m[1m[22m
+[2mdist/[22m[32massets/hombres_trabajando_mobile-phLQNwTc.jpg  [39m[1m[2m   474.35 kB[22m[1m[22m
+[2mdist/[22m[32massets/INICIOFORM-BaMnyTFC.png                 [39m[1m[2m   476.85 kB[22m[1m[22m
+[2mdist/[22m[32massets/FONDOROJO-BOKsmb4b.jpg                  [39m[1m[2m   481.18 kB[22m[1m[22m
+[2mdist/[22m[32massets/BANNER_SERVICIOS-D2hHnY7I.jpg           [39m[1m[2m   506.18 kB[22m[1m[22m
+[2mdist/[22m[32massets/SEDENA_FINAL-DTIbMMMy.png               [39m[1m[2m   564.80 kB[22m[1m[22m
+[2mdist/[22m[32massets/PARTICULAR-BcxXkU53.jpg                 [39m[1m[2m   656.98 kB[22m[1m[22m
+[2mdist/[22m[32massets/hombres_trabajando-CKJ43bR3.jpg         [39m[1m[2m   705.33 kB[22m[1m[22m
+[2mdist/[22m[32m.vite/ssr-manifest.json                        [39m[1m[2m   755.59 kB[22m[1m[22m[2m │ gzip:      7.92 kB[22m
+[2mdist/[22m[32massets/FONDOMATERIALESESCRITORIO-LymklUPl.jpg  [39m[1m[2m   768.30 kB[22m[1m[22m
+[2mdist/[22m[32massets/BANNER_PRINC_DESKTOP-Bq-BydDv.jpg       [39m[1m[2m   841.58 kB[22m[1m[22m
+[2mdist/[22m[32massets/texturas_reparaciones-DwHRLKwh.svg      [39m[1m[2m23,666.14 kB[22m[1m[22m[2m │ gzip: 17,729.97 kB[22m
+[2mdist/[22m[35massets/app-BmNKuC_d.css                        [39m[1m[2m    47.89 kB[22m[1m[22m[2m │ gzip:     10.24 kB[22m
+[2mdist/[22m[36massets/app-rRUNLkf5.js                         [39m[1m[2m   322.88 kB[22m[1m[22m[2m │ gzip:    111.96 kB[22m
+[32m✓ built in 9.14s[39m
+
+[vite-ssg] Build for server...
+[36mvite v5.4.21 [32mbuilding SSR bundle for production...[36m[39m
+transforming...
+[32m✓[39m 141 modules transformed.
+rendering chunks...
+[2m.vite-ssg-temp/5ptzh7ua8d/[22m[35massets/style-BNG8BMvd.css  [39m[1m[2m 62.78 kB[22m[1m[22m
+[2m.vite-ssg-temp/5ptzh7ua8d/[22m[36mapp.mjs                    [39m[1m[2m159.83 kB[22m[1m[22m
+[32m✓ built in 3.17s[39m
+
+[vite-ssg] Rendering Pages... (3)
+dist/nuestros-clientes.html  30.81 KiB
+dist/Contacto.html    30.14 KiB
+dist/index.html       33.84 KiB
+
+[vite-ssg] Build finished.
