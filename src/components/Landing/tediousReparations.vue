@@ -7,7 +7,7 @@
                     <p class="font-semibold  mx-auto text-thirty md:text-thirty-md  text-left  md:w-full pb-5 pp-mori">
                         Olvídate de las molestas goteras y el olor a<br class="hidden md:flow-root lg:hidden" /> humedad
                     </p><br />
-                    <img src="@/assets/svg/tediousReparations/texturas_reparaciones.svg"
+                    <img src="@/assets/img/tediousReparations/texturas_reparaciones.webp"
                         class="mx-auto pp-mori w-8/12 h-auto md:hidden" />
                     <p class="text-twenty  pt-5 md:pt-0">
                         El problema por <span class="text-orange font-semibold ">humedad</span> puede
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="col-span-12 hidden md:flex md:col-span-6 p-4 z-20  justify-center items-center">
-                <img src="@/assets/svg/tediousReparations/texturas_reparaciones.svg" class="w-10/12 h-auto" />
+                <img src="@/assets/img/tediousReparations/texturas_reparaciones.webp" class="w-10/12 h-auto" />
             </div>
         </section>
     </div>
@@ -42,7 +42,7 @@ export default {
 <style scoped>
 .bg-tedious-reparations {
     background-image:
-        url("@/assets/img/tediousReparations/FONDOGOTERAS.png");
+        url("@/assets/img/tediousReparations/FONDOGOTERAS.webp");
     background-size: cover;
     min-height: 60vh;
 }

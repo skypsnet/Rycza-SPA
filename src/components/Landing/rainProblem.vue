@@ -17,31 +17,26 @@
                                 patrimonio, ponte en manos de profesionales.
                             </p>
                             <div class="relative flow-root lg:hidden py-4">
-                                <div class="pt-[153%] lg:pt-[56.25%] relative">
-                                    <iframe
-                                        src="https://player.vimeo.com/video/750546148?h=7e8a460fb1&amp;controls=1&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;muted=1&amp;player_id=0&amp;app_id=58479"
-                                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-                                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                                        title="Aplicaci&amp;oacute;n de acr&amp;iacute;lico | RYCZA">
-                                    </iframe>
-                                </div>
+                                <LazyVimeoVideo 
+                                  src="https://player.vimeo.com/video/750546148?h=7e8a460fb1"
+                                  title="Aplicación de acrílico | RYCZA"
+                                  aspectRatio="153%"
+                                />
                             </div>
-                            <a href="/nuestros-clientes#galeria"
-                                class="button button--blue-light mx-auto lg:ml-0 lg:mr-auto  ">
+                            <router-link :to="{ path: '/nuestros-clientes', hash: '#galeria' }"
+                                class="button button--blue-light mx-auto lg:ml-0 lg:mr-0  ">
                                 Ver más
-                            </a>
+                            </router-link>
                         </div>
                     </div>
                     <div class="hidden lg:flex w-[40%]">
                         <div class="mx-auto w-full relative ">
-                            <div class="w-full" style="padding:100%  0 0 0;position:relative;">
-                                <iframe class="max-h-[80vh] m-auto"
-                                    src="https://player.vimeo.com/video/750546148?h=7e8a460fb1&amp;controls=1&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;muted=1&amp;player_id=0&amp;app_id=58479"
-                                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-                                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                                    title="Aplicaci&amp;oacute;n de Sistema Prefabricado | RYCZA">
-                                </iframe>
-                            </div>
+                            <LazyVimeoVideo 
+                              src="https://player.vimeo.com/video/750546148?h=7e8a460fb1"
+                              title="Aplicación de Sistema Prefabricado | RYCZA"
+                              aspectRatio="100%"
+                              iframeClass="max-h-[80vh] m-auto"
+                            />
                         </div>
                     </div>
                 </div>
@@ -52,8 +47,13 @@
     <!--#endregion que la lluvia no sea un problema-->
 </template>
 <script>
+import LazyVimeoVideo from "@/components/Common/LazyVimeoVideo.vue";
+
 export default {
     name: "rainProblem",
+    components: {
+        LazyVimeoVideo
+    },
     data() {
         return {};
     },
@@ -69,13 +69,13 @@ export default {
     width: 100%;
     height: 100%;
     opacity: 0.9;
-    background-image: url('@/assets/img/rainProblem/FONDOROJO.jpg');
+    background-image: url('@/assets/img/rainProblem/FONDOROJO.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 @media (max-width: 768px) {
     .bg-rain-problem:before {
-        background-image: url('@/assets/img/rainProblem/FONDOROJOMOBILE.jpg');
+        background-image: url('@/assets/img/rainProblem/FONDOROJOMOBILE.webp');
     }
 }
     

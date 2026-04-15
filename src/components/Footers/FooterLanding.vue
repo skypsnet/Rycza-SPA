@@ -7,36 +7,46 @@
                     RYCZA
                 </p>
                 <div
-                    class="flex lg:grid lg:grid-cols-5 lg:gap-5 flex-wrap container lg:justify-around xl:w-[74%]	  justify-center">
-                    <div class=" w-[30%] lg:w-auto ">
-                        <img src="@/assets/img/Footer/thermotek.png" class="footer-logo  aspect-square lg:mx-auto" />
+                    class="flex lg:grid lg:grid-cols-8 lg:gap-4 flex-wrap container lg:justify-around xl:w-[90%] justify-center items-center py-4">
+                    <div class="w-1/3 md:w-1/4 lg:w-auto p-2">
+                        <img src="@/assets/img/Footer/sherwin.webp" alt="Sherwin Williams" class="footer-logo object-contain mx-auto" />
                     </div>
-                    <div class=" w-[30%] lg:w-auto   ">
-                        <img src="@/assets/img/Footer/pasa.png" class="footer-logo  aspect-square lg:mx-auto" />
+                    <div class="w-1/3 md:w-1/4 lg:w-auto p-2">
+                        <img src="@/assets/img/Footer/pasa.webp" alt="PASA" class="footer-logo footer-logo--png object-contain mx-auto" />
                     </div>
-                    <div class=" w-[30%] lg:w-auto  ">
-                        <img src="@/assets/img/Footer/chovatek.png" class="footer-logo  aspect-square lg:mx-auto" />
+                    <div class="w-1/3 md:w-1/4 lg:w-auto p-2">
+                        <img src="@/assets/img/Footer/pazti.webp" alt="PAZTI" class="footer-logo object-contain mx-auto" />
                     </div>
-                    <div class=" w-[30%] lg:w-auto    ">
-                        <img src="@/assets/img/Footer/imperquimia.png" class="footer-logo  aspect-square lg:mx-auto" />
+                    <div class="w-1/3 md:w-1/4 lg:w-auto p-2">
+                        <img src="@/assets/img/Footer/imperquimia.webp" alt="Imperquimia" class="footer-logo footer-logo--png object-contain mx-auto" />
                     </div>
-                    <div class=" w-[30%] lg:w-auto    ">
-                        <img src="@/assets/img/Footer/protexa.png" class="footer-logo  aspect-square lg:mx-auto" />
+                    <div class="w-1/3 md:w-1/4 lg:w-auto p-2">
+                        <img src="@/assets/img/Footer/protexa.webp" alt="Protexa" class="footer-logo footer-logo--png object-contain mx-auto" />
+                    </div>
+                    <div class="w-1/3 md:w-1/4 lg:w-auto p-2">
+                        <img src="@/assets/img/Footer/copernit.webp" alt="Copernit" class="footer-logo object-contain mx-auto" />
+                    </div>
+                    <div class="w-1/3 md:w-1/4 lg:w-auto p-2">
+                        <img src="@/assets/img/Footer/ultramex.webp" alt="Ultramex" class="footer-logo object-contain mx-auto" />
+                    </div>
+                    <div class="w-1/3 md:w-1/4 lg:w-auto p-2">
+                        <img src="@/assets/img/Footer/danesa.webp" alt="Danesa" class="footer-logo object-contain mx-auto" />
                     </div>
                 </div>
+
                 <div class="w-full lg:flex justify-around flex-wrap">
-                    <a href="mailto:epoxicos.ricardozamora@gmail.com"
+                    <a href="mailto:imperycza@gmail.com"
                         class="flex items-center relative flex-wrap justify-center text-center text-blue text-xl font-medium">Contacto
                         <span class="inline-block"><img src="@/assets/svg/ICONO_MAIL.svg" width="25px"
                                 class="mx-2" /></span>
-                        epoxicos.ricardozamora@gmail.com
+                        imperycza@gmail.com
                     </a>
 
-                    <a href="https://www.facebook.com/RYCZAConstrucciones" target="_blank"
+                    <a href="https://www.facebook.com/RYCZAImper" target="_blank"
                         class="flex items-center relative flex-wrap justify-center text-center text-blue text-xl font-medium"> Siguenos!
                         <span class="inline-block"><img src="@/assets/svg/ICONO_FB.svg" width="25px"
                                 class="mx-2" /></span>
-                                RYCZAConstrucciones
+                                RYCZA Impermeabilizaciones
                     </a>
                 </div>
             </div>
@@ -53,14 +63,27 @@ export default {
 </script>
 <style>
 .bg-footer {
-    background-image: url("@/assets/img/footerFondo.png") !important;
+    background-image: url("@/assets/img/footerFondo.webp") !important;
     background-repeat: repeat !important;
     background-position: left;
 }
 
+.footer-logo {
+    max-height: 50px;
+    width: 100%;
+}
+
+.footer-logo--png {
+    transform: scale(1.35);
+}
+
 @media (min-width: 768px) {
     .footer-logo {
-        max-height: 177px;
+        max-height: 80px;
+    }
+    .footer-logo--png {
+        transform: scale(1.4);
     }
 }
+
 </style>

@@ -23,22 +23,21 @@
 
                         </p>
                         <br />
-                        <a href="/contacto"
-                            class="button button--orange  border-white ml-0 !mr-auto lg:text-twenty-five-md text-twenty-five">Contáctanos</a>
+                        <router-link to="/Contacto"
+                            class="button button--orange  border-white ml-0 !mr-auto lg:text-twenty-five-md text-twenty-five">Contáctanos</router-link>
                         <br />
                     </div>
                     <div class="hidden lg:flow-root">
-                        <img class="w-full mr-auto mar" src="@/assets/img/BannerHome/MATERIALESBANNER.png"
+                        <img class="w-full mr-auto mar" src="@/assets/img/BannerHome/bannermat.webp"
                             alt="firstBanner">
                     </div>
                 </div>
             </aside>
             <aside class="w-full  lg:max-w-[50%] bg-rycza-banner-worker">
                 <div class="lg:hidden relative">
-                    <img class="w-full mr-auto relative z-[3]" src="@/assets/img/BannerHome/MATERIALESBANNER.png"
+                    <img class="w-full mr-auto relative z-[3]" src="@/assets/img/BannerHome/bannermat.webp"
                         alt="firstBanner">
-                    <img class="w-full mr-auto z-0 relative -mt-[40px]"
-                        src="@/assets/img/BannerHome/FOTOBANNERPRINC.jpg" alt="firstBanner">
+                    <img src="@/assets/img/BannerHome/principalRycza.webp" alt="RYCZA IMPERMEABILIZACIONES">
                 </div>
             </aside>
         </section>
@@ -59,7 +58,7 @@ export default {
 .first-banner {
     background-repeat: repeat;
     background-position: 0%;
-    background-image: url("@/assets/img/BannerHome/PLECABANNERPRINCIPAL.jpg");
+    background-image: url("@/assets/img/BannerHome/PLECABANNERPRINCIPAL.webp");
     min-height: 100%;
     height: clamp(802px, 100vh, 150vh);
     background-size: 100%;
@@ -68,7 +67,7 @@ export default {
 .bg-rycza-banner-worker {
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("@/assets/img/BannerHome/FOTOBANNERPRINC.jpg");
+    background-image: url("@/assets/img/BannerHome/principalRycza.webp");
     height: 100%;
     background-size: cover;
 }
@@ -80,7 +79,7 @@ export default {
     }
 
     .bg-rycza-banner-worker {
-        background-image: url("@/assets/img/BannerHome/PLECABANNERPRINCIPAL.jpg");
+        background-image: url("@/assets/img/BannerHome/PLECABANNERPRINCIPAL.webp");
     }
 }
 </style>

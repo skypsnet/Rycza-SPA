@@ -17,9 +17,9 @@
         <p
           class="text-left text-white mb-5  text-twenty-five lg:text-twenty-five-md leading-[25px] max-w-[70%]  lg:w-fit  italic      pp-mori">
           <br />
-          <a href="/Contacto" class="button button--orange ml-0 mr-auto border-white ">
+          <router-link to="/Contacto" class="button button--orange ml-0 mr-auto border-white ">
             Contáctanos
-          </a>
+          </router-link>
         </p>
       </div>
 
@@ -42,13 +42,13 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("@/assets/img/ourClients/BANNER_PRINC_DESKTOP.jpg");
+  background-image: url("@/assets/img/ourClients/BANNER_PRINC_DESKTOP.webp");
   height: clamp(600px, 100vh, 100vh);
 }
 
 @media (max-width: 768px) {
   .bg-hero-clients {
-    background-image: url("@/assets/img/ourClients/BANNER_PRINC.jpg");
+    background-image: url("@/assets/img/ourClients/BANNER_PRINC.webp");
     background-position: right;
   }
 }

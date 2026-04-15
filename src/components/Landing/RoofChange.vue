@@ -24,7 +24,7 @@
             <div class="lg:grid gap-6 lg:gap-8 grid-cols-10 rounded-xl justify-center  p-2 lg:p-0">
                 <div class="hidden lg:flow-root col-span-1"></div>
                 <div class="relative col-span-10 lg:col-span-4 rounded-[16px] pb-10 lg:pb-0  flex flex-col">
-                    <img src="@/assets/img/SEDENA_ANTES.png" class="w-full xl:h-full max-h-[339px]" />
+                    <img src="@/assets/img/SEDENA_ANTES.webp" class="w-full xl:h-full max-h-[339px]" />
                     <div class="text-left text-twenty lg:text-twenty  py-5">
                         <p class=" text-twenty my-4 font-bold text-black ">
                             A N T E S
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="relative col-span-10 lg:col-span-4 rounded-[16px] pb-10 lg:pb-0 flex flex-col">
-                    <img src="@/assets/img/SEDENA_FINAL.png" class="w-full xl:h-full max-h-[339px]" />
+                    <img src="@/assets/img/SEDENA_FINAL.webp" class="w-full xl:h-full max-h-[339px]" />
                     <div class="text-left text-twenty lg:text-twenty py-5">
                         <p class="text-right text-twenty  font-bold text-black">
                             D E S P U É S
@@ -62,7 +62,7 @@
                 <div class="lg:grid gap-6 lg:gap-8 grid-cols-10 rounded-xl justify-center  p-2 lg:p-0">
                     <div class="hidden lg:flow-root col-span-1"></div>
                     <div class=" crelative col-span-10 lg:col-span-4 rounded-[16px]">
-                        <img src="@/assets/img/ANTES_AZOTEA.png" class="mx-auto lg:ml-auto h-full max-h-[374px]  " />
+                        <img src="@/assets/img/ANTES_AZOTEA.webp" class="mx-auto lg:ml-auto h-full max-h-[374px]  " />
                         <div class="max-w-[80%] lg:max-w-none mx-auto text-left text-twenty lg:text-twenty  py-5">
                             <p class=" text-twenty my-4 font-bold text-black">
                                 A N T E S
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="relative col-span-10 lg:col-span-4 rounded-[16px]">
-                        <img src="@/assets/img/DESPUES_AZOTEA.png" class="mx-auto lg:mr-auto  h-full max-h-[374px]" />
+                        <img src="@/assets/img/DESPUES_AZOTEA.webp" class="mx-auto lg:mr-auto  h-full max-h-[374px]" />
                         <div class="max-w-[80%] lg:max-w-none mx-auto text-left text-twenty lg:text-twenty  py-5">
                             <p class="text-right text-twenty my-4 font-bold text-black">
                                 D E S P U É S

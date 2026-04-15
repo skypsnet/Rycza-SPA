@@ -119,17 +119,17 @@ export default {
 }
 
 .testimonio-1 {
-  background-image: url('@/assets/img/ourClients/testimonials/Testimonio1.jpg');
+  background-image: url("@/assets/img/ourClients/testimonials/Testimonio1.webp");
   background-size: cover;
 }
 
 .testimonio-2 {
-  background-image: url('@/assets/img/ourClients/testimonials/Testimonio2.jpg');
+  background-image: url("@/assets/img/ourClients/testimonials/Testimonio2.webp");
   background-size: cover;
 }
 
 .testimonio-3 {
-  background-image: url('@/assets/img/ourClients/testimonials/Testimonio3.jpg');
+  background-image: url("@/assets/img/ourClients/testimonials/Testimonio3.webp");
   background-size: cover;
 }
 

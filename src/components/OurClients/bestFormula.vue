@@ -20,9 +20,9 @@
       <p class="blue-tick flex text-left my-4 text-white text-twenty md:text-twenty-md   pp-mori w-full">
         Sé parte de nuestra lista de clientes satisfechos.
       </p>
-      <a href="/Contacto" class="button  button--blue ml-0 border-white  ">
+      <router-link to="/Contacto" class="button  button--blue ml-0 border-white  ">
         Contáctanos
-      </a>
+      </router-link>
 
     </div>
   </section>
@@ -41,7 +41,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("@/assets/img/ourClients/servicios/BANNER_SERVICIOS.jpg");
+  background-image: url("@/assets/img/ourClients/servicios/BANNER_SERVICIOS.webp");
 }
 
 .blue-tick::before {

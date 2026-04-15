@@ -14,34 +14,44 @@
                     servicio profesional de<br class="lg:hidden" />
                     impermeabilización.
                 </p>
-                <div class="lg:grid grid-cols-2 lg:grid-cols-5 gap-5 p-4 hidden">
-                    <img src="@/assets/img/LogosClientes/sedena.png" />
-                    <img src="@/assets/img/LogosClientes/terramagna.png" />
-                    <img src="@/assets/img/LogosClientes/isuzu.png" />
-                    <img src="@/assets/img/LogosClientes/ciudadmayakoba.png" />
-                    <img src="@/assets/img/LogosClientes/rolandi.png" />
+                <div class="hidden lg:flex flex-wrap items-center justify-center gap-x-12 gap-y-14 p-6 pt-10 max-w-[1400px] mx-auto">
+                    <img src="@/assets/img/LogosClientes/sedena.webp" alt="SEDENA" class="max-h-40 lg:max-h-52 scale-125 object-contain" />
+                    <img src="@/assets/img/LogosClientes/terramagna.webp" alt="Terramagna" class="max-h-40 lg:max-h-52 scale-125 object-contain" />
+                    <img src="@/assets/img/LogosClientes/isuzu.webp" alt="ISUZU" class="max-h-40 lg:max-h-52 scale-125 object-contain" />
+                    <img src="@/assets/img/LogosClientes/ciudadmayakoba.webp" alt="Ciudad Mayakoba" class="max-h-40 lg:max-h-52 scale-140 object-contain" />
+                    <img src="@/assets/img/LogosClientes/rolandi.webp" alt="Rolandi" class="max-h-40 lg:max-h-52 scale-125 object-contain" />
+                    <img src="@/assets/img/LogosClientes/mistiq.webp" alt="Mistiq" class="max-h-28 lg:max-h-32 object-contain" />
+                    <img src="@/assets/img/LogosClientes/corasol.webp" alt="Corasol" class="max-h-28 lg:max-h-32 object-contain" />
+                    <img src="@/assets/img/LogosClientes/magnuscenter.webp" alt="Magnus Center" class="max-h-28 lg:max-h-32 object-contain" />
+                    <img src="@/assets/img/LogosClientes/macdonalds.webp" alt="McDonald's" class="max-h-28 lg:max-h-32 object-contain" />
+                    <img src="@/assets/img/LogosClientes/secrets.webp" alt="Secrets" class="max-h-28 lg:max-h-32 object-contain" />
+                    <img src="@/assets/img/LogosClientes/moon_palace.webp" alt="Moon Palace" class="max-h-28 lg:max-h-32 object-contain" />
                 </div>
-                <splide :options="clientSliderOptions" aria-label="clientSliders" class="lg:hidden">
-                    <SplideSlide>
-                        <img src="@/assets/img/LogosClientes/sedena.png" class="mx-auto" />
-                    </SplideSlide>
-                    <SplideSlide>
-                        <img src="@/assets/img/LogosClientes/terramagna.png" class="mx-auto" />
-                    </SplideSlide>
-                    <SplideSlide>
-                        <img src="@/assets/img/LogosClientes/isuzu.png" class="mx-auto" />
-                    </SplideSlide>
-                    <SplideSlide>
-                        <img src="@/assets/img/LogosClientes/ciudadmayakoba.png" class="mx-auto" />
-                    </SplideSlide>
-                    <SplideSlide>
-                        <img src="@/assets/img/LogosClientes/rolandi.png" class="mx-auto" />
-                    </SplideSlide>
-                </splide>
-                <a href="/nuestros-clientes#testimoniales"
+
+
+                <Splide :options="clientSliderOptions" aria-label="clientSliders" class="lg:hidden py-10">
+                    <SplideSlide class="flex items-center justify-center h-48"><img src="@/assets/img/LogosClientes/sedena.webp" class="h-40 scale-125 object-contain" /></SplideSlide>
+                    <SplideSlide class="flex items-center justify-center h-48"><img src="@/assets/img/LogosClientes/terramagna.webp" class="h-40 scale-125 object-contain" /></SplideSlide>
+                    <SplideSlide class="flex items-center justify-center h-48"><img src="@/assets/img/LogosClientes/isuzu.webp" class="h-40 scale-125 object-contain" /></SplideSlide>
+                    <SplideSlide class="flex items-center justify-center h-48"><img src="@/assets/img/LogosClientes/ciudadmayakoba.webp" class="h-40 scale-140 object-contain" /></SplideSlide>
+                    <SplideSlide class="flex items-center justify-center h-48"><img src="@/assets/img/LogosClientes/rolandi.webp" class="h-40 scale-125 object-contain" /></SplideSlide>
+                    <SplideSlide class="flex items-center justify-center h-48"><img src="@/assets/img/LogosClientes/corasol.webp" class="h-32 object-contain" /></SplideSlide>
+                    <SplideSlide class="flex items-center justify-center h-48"><img src="@/assets/img/LogosClientes/magnuscenter.webp" class="h-32 object-contain" /></SplideSlide>
+                    <SplideSlide class="flex items-center justify-center h-48"><img src="@/assets/img/LogosClientes/macdonalds.webp" class="h-32 object-contain" /></SplideSlide>
+                    <SplideSlide class="flex items-center justify-center h-48"><img src="@/assets/img/LogosClientes/secrets.webp" class="h-32 object-contain" /></SplideSlide>
+                    <SplideSlide class="flex items-center justify-center h-48"><img src="@/assets/img/LogosClientes/moon_palace.webp" class="h-32 object-contain" /></SplideSlide>
+                    <SplideSlide class="flex items-center justify-center h-48"><img src="@/assets/img/LogosClientes/mistiq.webp" class="h-28 object-contain" /></SplideSlide>
+                </Splide>
+
+
+
+
+
+
+                <router-link :to="{ path: '/nuestros-clientes', hash: '#testimoniales' }"
                     class="md:flow-root button button--blue container  mb-6 ">
                     Ver opiniones
-                </a>
+                </router-link>
             </div>
         </div>
     </section>
@@ -58,11 +68,22 @@ export default {
                 autoplay: true,
                 type: "loop",
                 perPage: 1,
+                gap: '1.5rem',
+                arrows: false,
+                pagination: true,
                 rewind: true,
                 classes: {
                     arrows: "splide__arrows your-class-arrows",
                     page: "splide__pagination__page your-class-page",
                     pagination: "splide__pagination pagination-clients-mobile",
+                },
+                breakpoints: {
+                    640: {
+                        perPage: 2,
+                    },
+                    1024: {
+                        perPage: 3,
+                    },
                 },
             },
         };

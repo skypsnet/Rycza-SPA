@@ -10,13 +10,13 @@
         <div class="container my-auto px-5 pb-5">
           <div class="flex flex-col lg:flex-row lg:items-end  lg:content-center">
             <div class="w-full lg:w-1/3">
-              <img src="@/assets/img/ourClients/ourJob/FINALASOLEADO.jpg" class="rounded-[11px] box-shadow"
+              <img src="@/assets/img/ourClients/ourJob/FINALASOLEADO.webp" class="rounded-[11px] box-shadow"
                 alt="FINALASOLEADO">
               <p class="font-bold italic text-twenty md:text-twenty-md py-2 uppercase mt-2">Soleado</p>
               <hr class="max-w-[90%] border border-orange" />
             </div>
             <div class="w-full pt-10 lg:pt-0 text-left lg:w-2/3 lg:px-5">
-              <img src="@/assets/img/ourClients/ourJob/PRODUCTOFINALLLOVIENDO.jpg" class="rounded-[11px] box-shadow"
+              <img src="@/assets/img/ourClients/ourJob/PRODUCTOFINALLLOVIENDO.webp" class="rounded-[11px] box-shadow"
                 alt="PRODUCTOFINALLLOVIENDO">
               <p class="font-bold ml-auto italic w-full text-twenty text-right md:text-twenty-md py-2 uppercase mt-2">
                 Bajo la lluvia</p>

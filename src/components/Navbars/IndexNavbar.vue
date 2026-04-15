@@ -1,19 +1,27 @@
 <template>
-    <header class=" w-full  z-50 " :class="headerClasses">
-        <nav class="navbar px-5 lg:px-0  navbar-expand-lg py-2 flex lg:items-center w-full justify-between"
+    <header class="left-0 right-0 z-50" :class="headerClasses">
+        <nav class="navbar px-5 lg:px-0 navbar-expand-lg py-2 flex lg:items-center justify-between"
             :class="navClasses">
-            <div class=" w-full flex flex-col lg:flex-row flex-wrap items-center justify-between"
+            <div class="grow flex flex-col lg:flex-row flex-wrap items-center justify-between"
                 :class="{ 'h-full': collapsedMenu }">
-                <div class="flex w-full items-center justify-between container ">
-                    <a href="/">
-                        <img v-show="blackLogo" src="@/assets/svg/LOGO_RYCZA.svg" width="50" height="50"
-                            class="d-inline-block align-top lg:hidden h-[2.94rem] w-[8.29rem]" alt="" />
-                        <img v-show="!blackLogo" src="@/assets/svg/LOGO_RYCZA_BLANCO.svg" width="50" height="50"
-                            class="d-inline-block align-top lg:hidden h-[2.94rem] w-[8.29rem]" alt="" />
-                    </a>
+                <div class="flex w-full items-center justify-between container mx-auto">
+                    <router-link to="/" class="flex items-center gap-4">
+                        <div class="flex items-center gap-2">
+                            <img v-show="blackLogo" src="@/assets/svg/LOGO_RYCZA.svg" width="50" height="50"
+                                class="d-inline-block align-top lg:hidden h-[2.94rem] w-[8.29rem]" alt="" />
+                            <img v-show="!blackLogo" src="@/assets/svg/LOGO_RYCZA_BLANCO.svg" width="50" height="50"
+                                class="d-inline-block align-top lg:hidden h-[2.94rem] w-[8.29rem]" alt="" />
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img v-show="blackLogo" src="@/assets/img/Header/copernitazulsinfondo.webp" width="50" height="50"
+                                class="d-inline-block align-top lg:hidden h-[2.94rem] w-[8.29rem]" alt="" />
+                            <img v-show="!blackLogo" src="@/assets/img/Header/copernitwhite.webp" width="50" height="50"
+                                class="d-inline-block align-top lg:hidden h-[2.94rem] w-[8.29rem]" alt="" />
+                        </div>
+                    </router-link>
 
                     <button
-                        class="navbar-toggler border-0 py-3 lg:hidden leading-none text-xl bg-transparent  transition-shadow duration-150 ease-in-out mr-2"
+                        class="navbar-toggler border-0 py-3 lg:hidden leading-none text-xl bg-transparent transition-shadow duration-150 ease-in-out"
                         type="button" @click="toggleMenu" :class="black ? 'text-black' : ' text-white'">
                         <svg v-if="!blackLogo" aria-hidden="true" focusable="false" data-prefix="fas"
                             class="h-[1.54rem]" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -30,14 +38,22 @@
                     </button>
                 </div>
                 <div class="w-full grow items-center">
-                    <div class="  justify-between items-center grow hidden lg:flex">
-                        <div class="container w-[50%] ">
+                    <div class="justify-between items-center grow hidden lg:flex">
+                        <div class="container mx-auto w-[50%]">
                             <div class="hidden md:flex max-w-[90%] ml-auto ">
-                                <router-link :to="{ name: 'LandingPage' }">
-                                    <img v-show="blackLogo" src="@/assets/svg/LOGO_RYCZA.svg" width="50" height="50"
-                                        class="d-inline-block align-top w-48 " alt="" />
-                                    <img v-show="!blackLogo" src="@/assets/svg/LOGO_RYCZA_BLANCO.svg" width="50"
-                                        height="50" class="d-inline-block align-top w-48" alt="" />
+                                <router-link :to="{ name: 'LandingPage' }" class="flex items-center gap-6">
+                                    <div class="flex items-center sm:gap-2">
+                                        <img v-show="blackLogo" src="@/assets/svg/LOGO_RYCZA.svg" width="50" height="50"
+                                            class="d-inline-block align-top w-48" alt="" />
+                                        <img v-show="!blackLogo" src="@/assets/svg/LOGO_RYCZA_BLANCO.svg" width="50"
+                                            height="50" class="d-inline-block align-top w-48" alt="" />
+                                    </div>
+                                    <div class="flex items-center h-full pt-1">
+                                        <img v-show="blackLogo" src="@/assets/img/Header/copernitazulsinfondo.webp"
+                                            class="d-inline-block align-top h-14 w-auto" alt="Copernit Blue" />
+                                        <img v-show="!blackLogo" src="@/assets/img/Header/copernitwhite.webp"
+                                            class="d-inline-block align-top h-14 w-auto" alt="Copernit White" />
+                                    </div>
                                 </router-link>
                             </div>
                         </div>
@@ -180,9 +196,11 @@ export default {
         },
         textWhite: {
             get() {
+                const isDesktop = this.window.width >= 1024;
+                const isContactoRoute = this.$route.name === 'Contacto';
                 return {
-                    '!text-black': this.scrolled || this.$route.name !== 'OurCLients',
-                    'text-white': !this.scrolled
+                    '!text-black': this.scrolled || (isContactoRoute && isDesktop),
+                    'text-white': !this.scrolled && !(isContactoRoute && isDesktop)
                 };
             }
         },

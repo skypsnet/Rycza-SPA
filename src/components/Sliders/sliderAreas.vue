@@ -59,38 +59,38 @@
                     {{ activeSlider.leyend }}
                 </p>
             </div>
-            <a href="/nuestros-clientes#portafolio"
+            <router-link :to="{ path: '/nuestros-clientes', hash: '#portafolio' }"
                 class="mx-auto w-[60%]  md:flow-root button button--blue-light container ">
                 Ver proyectos
-            </a>
+            </router-link>
         </div>
     </section>
 </template>
 
 <script>
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/vue-splide";
-import azotea1 from "@/assets/img/AreaSlider/AZOTEA1.jpg";
-import azotea2 from "@/assets/img/AreaSlider/AZOTEA2.jpg";
-import azotea3 from "@/assets/img/AreaSlider/AZOTEA3.jpg";
-import azotea4 from "@/assets/img/AreaSlider/AZOTEA4.jpg";
-import azotea6 from "@/assets/img/AreaSlider/AZOTEA6.jpg";
-import azotea8 from "@/assets/img/AreaSlider/AZOTEA8.jpg";
-import azotea9 from "@/assets/img/AreaSlider/AZOTEA9.jpg";
-import azotea10 from "@/assets/img/AreaSlider/AZOTEA10.jpg";
-import azotea11 from "@/assets/img/AreaSlider/AZOTEA11.jpg";
-import azotea13 from "@/assets/img/AreaSlider/AZOTEA13.jpg";
-import terraza1 from "@/assets/img/AreaSlider/TERRAZA1.jpg";
-import terraza2 from "@/assets/img/AreaSlider/TERRAZA2.jpg";
-import terraza3 from "@/assets/img/AreaSlider/TERRAZA3.jpg";
-import terraza4 from "@/assets/img/AreaSlider/TERRAZA4.jpg";
-import alberca1 from "@/assets/img/AreaSlider/ALBERCA1.jpg";
-import alberca2 from "@/assets/img/AreaSlider/ALBERCA2.jpg";
-import alberca5 from "@/assets/img/AreaSlider/ALBERCA5.jpg";
-import cisterna1 from "@/assets/img/AreaSlider/CISTERNA1.jpg";
-import cisterna2 from "@/assets/img/AreaSlider/CISTERNA2.jpg";
-import cisterna3 from "@/assets/img/AreaSlider/CISTERNA3.jpg";
-import cisterna4 from "@/assets/img/AreaSlider/CISTERNA4.jpg";
-import espejodeagua from "@/assets/img/AreaSlider/ESPEJODEAGUA.jpg";
+import azotea1 from "@/assets/img/AreaSlider/AZOTEA1.webp";
+import azotea2 from "@/assets/img/AreaSlider/AZOTEA2.webp";
+import azotea3 from "@/assets/img/AreaSlider/AZOTEA3.webp";
+import azotea4 from "@/assets/img/AreaSlider/AZOTEA4.webp";
+import azotea6 from "@/assets/img/AreaSlider/AZOTEA6.webp";
+import azotea8 from "@/assets/img/AreaSlider/AZOTEA8.webp";
+import azotea9 from "@/assets/img/AreaSlider/AZOTEA9.webp";
+import azotea10 from "@/assets/img/AreaSlider/AZOTEA10.webp";
+import azotea11 from "@/assets/img/AreaSlider/AZOTEA11.webp";
+import azotea13 from "@/assets/img/AreaSlider/AZOTEA13.webp";
+import terraza1 from "@/assets/img/AreaSlider/TERRAZA1.webp";
+import terraza2 from "@/assets/img/AreaSlider/TERRAZA2.webp";
+import terraza3 from "@/assets/img/AreaSlider/TERRAZA3.webp";
+import terraza4 from "@/assets/img/AreaSlider/TERRAZA4.webp";
+import alberca1 from "@/assets/img/AreaSlider/ALBERCA1.webp";
+import alberca2 from "@/assets/img/AreaSlider/ALBERCA2.webp";
+import alberca5 from "@/assets/img/AreaSlider/ALBERCA5.webp";
+import cisterna1 from "@/assets/img/AreaSlider/CISTERNA1.webp";
+import cisterna2 from "@/assets/img/AreaSlider/CISTERNA2.webp";
+import cisterna3 from "@/assets/img/AreaSlider/CISTERNA3.webp";
+import cisterna4 from "@/assets/img/AreaSlider/CISTERNA4.webp";
+import espejodeagua from "@/assets/img/AreaSlider/ESPEJODEAGUA.webp";
 
 export default {
     components: {
@@ -346,6 +346,6 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("@/assets/img/AreaSlider/FONDODEGRADADO.png");
+    background-image: url("@/assets/img/AreaSlider/FONDODEGRADADO.webp");
 }
 </style>

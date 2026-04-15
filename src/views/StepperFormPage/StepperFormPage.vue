@@ -115,7 +115,7 @@
                             <Splide :options="splideOptions" class="!py-0 !px-6   w-full my-[1rem]  mx-auto">
                                 <SplideSlide class="text-center p-1 rounded">
                                     <div>
-                                        <img src="@/assets/img/contact/ACRILICOS/Acrilico_rycza.jpg"
+                                        <img src="@/assets/img/contact/ACRILICOS/Acrilico_rycza.webp"
                                             alt="Acrilico_rycza" class="aspect-square rounded-md" />
                                     </div>
 
@@ -123,7 +123,7 @@
                                 <SplideSlide>
                                     <div class="text-center p-1 rounded">
                                         <div>
-                                            <img src="@/assets/img/contact/ACRILICOS/Acrilico2_rycza.jpg"
+                                            <img src="@/assets/img/contact/ACRILICOS/Acrilico2_rycza.webp"
                                                 alt="Acrilico_rycza2" class="aspect-square rounded-md" />
                                         </div>
                                     </div>
@@ -131,7 +131,7 @@
                                 <SplideSlide>
                                     <div class="text-center p-1  rounded">
                                         <div>
-                                            <img src="@/assets/img/contact/ACRILICOS/Acrilico3_rycza.jpeg"
+                                            <img src="@/assets/img/contact/ACRILICOS/Acrilico3_rycza.webp"
                                                 alt="Acrilico_rycza3" class="aspect-square rounded-md" />
                                         </div>
                                     </div>
@@ -152,14 +152,14 @@
                             <Splide :options="splideOptions" class="!py-0 !px-6  w-full my-[1rem] mx-auto">
                                 <SplideSlide class="text-center p-1 rounded">
                                     <div>
-                                        <img src="@/assets/img/contact/PREFABRICADOS/Prefabricado1_rycza.jpg"
+                                        <img src="@/assets/img/contact/PREFABRICADOS/Prefabricado1_rycza.webp"
                                             alt="Acrilico_rycza" class="aspect-square rounded-md" />
                                     </div>
                                 </SplideSlide>
                                 <SplideSlide>
                                     <div class="text-center p-1 rounded">
                                         <div>
-                                            <img src="@/assets/img/contact/PREFABRICADOS/Prefabricado2_rycza.jpg"
+                                            <img src="@/assets/img/contact/PREFABRICADOS/Prefabricado2_rycza.webp"
                                                 alt="Acrilico_rycza2" class="aspect-square rounded-md" />
                                         </div>
                                     </div>
@@ -167,7 +167,7 @@
                                 <SplideSlide>
                                     <div class="text-center p-1 rounded">
                                         <div>
-                                            <img src="@/assets/img/contact/PREFABRICADOS/Prefabricado3_rycza.jpg"
+                                            <img src="@/assets/img/contact/PREFABRICADOS/Prefabricado3_rycza.webp"
                                                 alt="Acrilico_rycza3" class="aspect-square rounded-md" />
                                         </div>
                                     </div>
@@ -189,14 +189,14 @@
                             <Splide :options="splideOptions" class="!py-0 !px-6  w-full my-[1rem]  mx-auto">
                                 <SplideSlide class="text-center p-1 rounded">
                                     <div>
-                                        <img src="@/assets/img/contact/CEMENTICIOS/Cementicio1_rycza.jpg"
+                                        <img src="@/assets/img/contact/CEMENTICIOS/Cementicio1_rycza.webp"
                                             alt="Acrilico_rycza" class="aspect-square rounded-md" />
                                     </div>
                                 </SplideSlide>
                                 <SplideSlide>
                                     <div class="text-center p-1 rounded">
                                         <div>
-                                            <img src="@/assets/img/contact/CEMENTICIOS/Cementicio2_rycza.jpg"
+                                            <img src="@/assets/img/contact/CEMENTICIOS/Cementicio2_rycza.webp"
                                                 alt="Acrilico_rycza" class="aspect-square rounded-md" />
                                         </div>
                                     </div>
@@ -204,7 +204,7 @@
                                 <SplideSlide>
                                     <div class="text-center p-1 rounded">
                                         <div>
-                                            <img src="@/assets/img/contact/CEMENTICIOS/Cementicio3_rycza.jpg"
+                                            <img src="@/assets/img/contact/CEMENTICIOS/Cementicio3_rycza.webp"
                                                 alt="Acrilico_rycza" class="aspect-square rounded-md" />
                                         </div>
                                     </div>
@@ -225,14 +225,14 @@
                             <Splide :options="splideOptions" class="!py-0 !px-6  w-full my-[1rem]  mx-auto">
                                 <SplideSlide class="text-center p-1 rounded">
                                     <div>
-                                        <img src="@/assets/img/contact/TERMOREDUCTORES/Termoreductor1_rycza.jpg"
+                                        <img src="@/assets/img/contact/TERMOREDUCTORES/Termoreductor1_rycza.webp"
                                             alt="Termoreductor1_rycza" class="aspect-square rounded-md" />
                                     </div>
                                 </SplideSlide>
                                 <SplideSlide>
                                     <div class="text-center p-1 rounded">
                                         <div>
-                                            <img src="@/assets/img/contact/TERMOREDUCTORES/Termoreductor2_rycza.jpg"
+                                            <img src="@/assets/img/contact/TERMOREDUCTORES/Termoreductor2_rycza.webp"
                                                 alt="Termoreductor2_rycza" class="aspect-square rounded-md" />
                                         </div>
                                     </div>
@@ -240,7 +240,7 @@
                                 <SplideSlide>
                                     <div class="text-center p-1 rounded">
                                         <div>
-                                            <img src="@/assets/img/contact/TERMOREDUCTORES/Termoreductor3_rycza.jpg"
+                                            <img src="@/assets/img/contact/TERMOREDUCTORES/Termoreductor3_rycza.webp"
                                                 alt="Termoreductor3_rycza" class="aspect-square rounded-md" />
                                         </div>
                                     </div>
@@ -370,7 +370,7 @@
             </div>
             <div v-show="identifier === 8" class="identifier-container container flex flex-col justify-around ">
                 <p class="title-form-question " v-if="actualPathIndex != 0 && actualPathIndex != 2">
-                    Parece que necesitas algo especial</p>
+                    Servicios especializados RYCZA</p>
                 <p class="title-form-question " v-if="actualPathIndex != 3 && actualPathIndex != 1">
                     Proporcionanos tus datos </p>
 
@@ -427,23 +427,21 @@
                         </div>
                     </div><br />
                     <p class="text-center col-span-full pp-mori text-thirty mx-auto md:text-thirty-md font-semibold ">
-                        Agenda una asesoría
+                        Proporcionanos tus datos
                     </p> <br />
-                    <calendarSheduler v-if="datosDelCliente.fullfilled && identifier === 8"
-                        @calendlyEvent="calendlyEvent" :prefill-data="prefillData">
-                    </calendarSheduler>
-                    <button  v-else class="button-form-question button--orange-disabled mx-auto">
-                        Seleccionar fecha y hora
+                    <button @click="sendForm" class="button-form-question mx-auto"
+                        :class="datosDelCliente.fullfilled ? 'button--orange' : 'button--orange-disabled'"
+                        :disabled="!datosDelCliente.fullfilled">
+                        {{ isLoading ? 'Enviando...' : 'Enviar Solicitud' }}
                     </button>
                 </div>
             </div>
-            <FinalStep v-show="identifier === 9" />
+            <FinalStep v-show="identifier === 9" :whatsapp-url="formattedWhatsappUrl" />
         </div>
     </div>
 </template>
 <script>
 import axios from "axios";
-import calendarSheduler from "@/components/calendar/calendarSheduler.vue";
 
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import FirstStep from "@/components/formSteps/firstStep.vue";
@@ -516,7 +514,7 @@ export default {
 
         };
     },
-    components: { calendarSheduler, Splide, SplideSlide, FirstStep, FinalStep,Loading },
+    components: { Splide, SplideSlide, FirstStep, FinalStep,Loading },
     methods: {
         nextStep() {
             window.scrollTo(0, 0);
@@ -569,10 +567,10 @@ export default {
             const prevStep = this.actualPath[this.steppage];
             this.identifier = prevStep;
         },
-        async sendForm() {
+        sendForm() {
             this.isLoading = true;
             try {
-                const response = await axios.post("https://api.web3forms.com/submit", {
+                const response = axios.post("https://api.web3forms.com/submit", {
                     access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // TODO: Replace with your actual Web3Forms access key
                     subject: "Nuevo Contacto Rycza SPA",
                     goterasHumedadEnDomicilio: this.goterasHumedadEnDomicilio,
@@ -590,12 +588,7 @@ export default {
             }
 
             this.isLoading = false;
-            /* console.log(response); */
-
             this.nextStep();
-        },
-        calendlyEvent(event) {
-            this.sendForm();
         },
         checkproductoInteresado(producto) {
             if (this.productoInteresado.includes(producto)) {
@@ -681,6 +674,25 @@ export default {
                 name: this.datosDelCliente.nombre,
                 email: this.datosDelCliente.correo,
             }
+        },
+        formattedWhatsappUrl() {
+            const baseUrl = "https://wa.me/529983717937?text=";
+            const constructionType = this.tipoDeConstruccion === 'Otro' ? this.otroTipoDeConstruccion : this.tipoDeConstruccion;
+            const products = [...this.productoInteresado];
+            if (this.otroTipodeProductoInteresado) products.push(this.otroTipodeProductoInteresado);
+            
+            const message = `*Nuevo Presupuesto Rycza*\n` +
+                `--------------------------\n` +
+                `*Nombre:* ${this.datosDelCliente.nombre || 'N/A'}\n` +
+                `*Email:* ${this.datosDelCliente.correo || 'N/A'}\n` +
+                `*Teléfono:* ${this.datosDelCliente.telefono || 'N/A'}\n` +
+                `*Problema:* ${this.goterasHumedadEnDomicilio || 'N/A'}\n` +
+                `*Tipo de construcción:* ${constructionType || 'N/A'}\n` +
+                `*Interés:* ${products.join(', ') || 'N/A'}\n` +
+                `*Ubicación:* ${this.dondeRequieresElServicio.calle || ''}, ${this.dondeRequieresElServicio.colonia || ''}, ${this.dondeRequieresElServicio.ubicacion || ''}\n` +
+                `*Mantenimiento:* ${this.mantenimientoPreventivo || 'N/A'}`;
+            
+            return baseUrl + encodeURIComponent(message);
         }
     }
 };
@@ -698,11 +710,17 @@ export default {
 
 .bg-glass-rain {
     background-size: cover;
-    background-image: url("@/assets/img/Contact/INICIOFORM.png");
+    background-image: url("@/assets/img/Contact/INICIOFORM.webp");
+}
+
+@media (max-width: 768px) {
+    .bg-contact-form {
+        background-image: url("@/assets/img/Contact/INICIOFORM.webp");
+    }
 }
 
 .bg-glass-rain-final {
-    background-image: url("@/assets/img/Contact/INICIOFORM.png");
+    background-image: url("@/assets/img/Contact/INICIOFORM.webp");
     background-repeat: no-repeat;
     background-position: top center;
     object-fit: cover;

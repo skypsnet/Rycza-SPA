@@ -11,7 +11,7 @@
           class=" lg:hidden " />
         <span class="italic font-semibold"> mejores acabados</span>
       </p>
-      <img src="@/assets/img/ourClients/formula/MATERIALESMOVIL.png" alt="quality-materials"
+          <img src="@/assets/img/BannerHome/bannermat.webp" alt="quality-materials"
         class="w-full mx-auto md:max-w-[71%] mb-5">
     </div>
   </section>
@@ -27,19 +27,10 @@ export default {
 
 <style>
 
-@media (min-width: 768px) {
-  .quality-materials-bg {
-    background-image: url("@/assets/img/ourClients/formula/FONDOMATERIALESESCRITORIO.jpg");
-    min-height: clamp(600px, 81vh, 100vh);
+.quality-materials-bg {
+  background-image: url("@/assets/img/ourClients/formula/FONDOMATERIALESESCRITORIO.webp");
+  min-height: clamp(600px, 81vh, 100vh);
 
-  }
-}
-
-@media(max-width: 768px) {
-  .quality-materials-bg {
-    background-image: url("@/assets/img/ourClients/formula/FONDOMATERIALESMOVIL.jpg");
-    min-height: clamp(600px, 40vh, 100vh);
-  }
 }
 
 .quality-materials-bg {

@@ -35,14 +35,14 @@
 <script>
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import Modal from "@/components/Modals/modal.vue";
-import proyecto1 from "@/assets/img/ourClients/portfolio/PROYECTO1.jpg";
-import proyecto2 from "@/assets/img/ourClients/portfolio/PROYECTO2.jpg";
-import proyecto3 from "@/assets/img/ourClients/portfolio/PROYECTO3.jpg";
-import proyecto4 from "@/assets/img/ourClients/portfolio/PROYECTO4.jpg";
-import proyecto5 from "@/assets/img/ourClients/portfolio/PROYECTO5.jpg";
-import proyecto6 from "@/assets/img/ourClients/portfolio/PROYECTO6.jpg";
-import proyecto7 from "@/assets/img/ourClients/portfolio/PROYECTO7.jpg";
-import proyecto8 from "@/assets/img/ourClients/portfolio/PROYECTO8.jpg";
+import proyecto1 from "@/assets/img/ourClients/portfolio/PROYECTO1.webp";
+import proyecto2 from "@/assets/img/ourClients/portfolio/PROYECTO2.webp";
+import proyecto3 from "@/assets/img/ourClients/portfolio/PROYECTO3.webp";
+import proyecto4 from "@/assets/img/ourClients/portfolio/PROYECTO4.webp";
+import proyecto5 from "@/assets/img/ourClients/portfolio/PROYECTO5.webp";
+import proyecto6 from "@/assets/img/ourClients/portfolio/PROYECTO6.webp";
+import proyecto7 from "@/assets/img/ourClients/portfolio/PROYECTO7.webp";
+import proyecto8 from "@/assets/img/ourClients/portfolio/PROYECTO8.webp";
 
 export default {
   name: "OurClientSlider",

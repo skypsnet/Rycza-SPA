@@ -49,7 +49,7 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("@/assets/img/Fondo_antes_y_despues.jpg");
+    background-image: url("@/assets/img/Fondo_antes_y_despues.webp");
 } */
 
 .bg-working {
@@ -57,12 +57,12 @@ export default {
     background-size: cover;
     object-fit: cover;
     min-height: 70vh;
-    background-image: url("@/assets/img/hombres_trabajando.jpg");
+    background-image: url("@/assets/img/hombres_trabajando.webp");
 }
 
 @media (max-width: 757px) {
     .bg-working {
-        background-image: url("@/assets/img/hombres_trabajando_mobile.jpg");
+        background-image: url("@/assets/img/hombres_trabajando_mobile.webp");
     }
 }
 
