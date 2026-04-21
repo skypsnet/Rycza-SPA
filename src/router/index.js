@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
+import { trackGTMPageView } from "@/utils/gtm";
+
 import Landing from "@/Layouts/Landing.vue";
 import StepperForm from "@/Layouts/StepperForm.vue";
 // views for landingPage layout
@@ -186,6 +188,10 @@ router.beforeEach((to, from, next) => {
         .forEach((tag) => document.head.appendChild(tag));
 
     next();
+});
+
+router.afterEach((to) => {
+    trackGTMPageView(to.path, to.meta.title || document.title);
 });
 
 export default router;

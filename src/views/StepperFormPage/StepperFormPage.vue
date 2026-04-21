@@ -442,6 +442,8 @@
 </template>
 <script>
 import axios from "axios";
+import { trackGTMEvent } from "@/utils/gtm";
+
 
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import FirstStep from "@/components/formSteps/firstStep.vue";
@@ -567,28 +569,46 @@ export default {
             const prevStep = this.actualPath[this.steppage];
             this.identifier = prevStep;
         },
-        sendForm() {
+        async sendForm() {
             this.isLoading = true;
             try {
-                const response = axios.post("https://api.web3forms.com/submit", {
-                    access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // TODO: Replace with your actual Web3Forms access key
-                    subject: "Nuevo Contacto Rycza SPA",
-                    goterasHumedadEnDomicilio: this.goterasHumedadEnDomicilio,
-                    tipoDeConstruccion: this.tipoDeConstruccion,
-                    otroTipoDeConstruccion: this.otroTipoDeConstruccion,
-                    productoInteresado: this.productoInteresado,
-                    otroTipodeProductoInteresado: this.otroTipodeProductoInteresado,
-                    dondeRequieresElServicio: this.dondeRequieresElServicio,
-                    datosDelCliente: this.datosDelCliente,
-                    identificacion: this.identificacion,
-                    mantenimientoPreventivo: this.mantenimientoPreventivo,
+                const response = await axios.post("https://api.web3forms.com/submit", {
+                    access_key: "46628c94-552b-46ef-8312-95e72743eca0",
+                    subject: `Nuevo Presupuesto RYCZA: ${this.datosDelCliente.nombre}`,
+                    from_name: this.datosDelCliente.nombre,
+                    Nombre: this.datosDelCliente.nombre,
+                    Telefono: this.datosDelCliente.telefono,
+                    Correo: this.datosDelCliente.correo,
+                    "Goteras o Humedad": this.goterasHumedadEnDomicilio,
+                    "Tipo de Construcción": this.tipoDeConstruccion === 'Otro' ? this.otroTipoDeConstruccion : this.tipoDeConstruccion,
+                    Identificación: this.identificacion,
+                    "Productos de Interés": this.productoInteresado.join(", ") + (this.otroTipodeProductoInteresado ? `, ${this.otroTipodeProductoInteresado}` : ""),
+                    "Mantenimiento Preventivo": this.mantenimientoPreventivo,
+                    Ubicación: this.dondeRequieresElServicio.ubicacion,
+                    Colonia: this.dondeRequieresElServicio.colonia,
+                    Calle: this.dondeRequieresElServicio.calle,
+                    "No. Exterior": this.dondeRequieresElServicio.noExterior,
+                    "No. Interior": this.dondeRequieresElServicio.noInterior,
+                    Referencias: this.dondeRequieresElServicio.referencias,
                 });
+                
+                if (response.status === 200) {
+                    console.log("Form successfully submitted to Web3Forms");
+                    trackGTMEvent('form_submission_success', {
+                        category: 'conversion',
+                        label: 'Stepper Form'
+                    });
+                }
             } catch (error) {
                 console.error("Error submitting form", error);
+                trackGTMEvent('form_submission_error', {
+                    category: 'error',
+                    label: 'Stepper Form'
+                });
+            } finally {
+                this.isLoading = false;
+                this.nextStep();
             }
-
-            this.isLoading = false;
-            this.nextStep();
         },
         checkproductoInteresado(producto) {
             if (this.productoInteresado.includes(producto)) {

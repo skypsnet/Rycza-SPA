@@ -15,10 +15,10 @@
                         <img src="@/assets/img/Footer/pasa.webp" alt="PASA" class="footer-logo footer-logo--png object-contain mx-auto" />
                     </div>
                     <div class="w-1/3 md:w-1/4 lg:w-auto p-2">
-                        <img src="@/assets/img/Footer/pazti.webp" alt="PAZTI" class="footer-logo object-contain mx-auto" />
+                        <img src="@/assets/img/Footer/pazti.webp" alt="PAZTI" class="footer-logo footer-logo--pazti object-contain mx-auto" />
                     </div>
                     <div class="w-1/3 md:w-1/4 lg:w-auto p-2">
-                        <img src="@/assets/img/Footer/imperquimia.webp" alt="Imperquimia" class="footer-logo footer-logo--png object-contain mx-auto" />
+                        <img src="@/assets/img/Footer/imperquimia.webp" alt="Imperquimia" class="footer-logo footer-logo--png footer-logo--imperquimia object-contain mx-auto" />
                     </div>
                     <div class="w-1/3 md:w-1/4 lg:w-auto p-2">
                         <img src="@/assets/img/Footer/protexa.webp" alt="Protexa" class="footer-logo footer-logo--png object-contain mx-auto" />
@@ -35,14 +35,16 @@
                 </div>
 
                 <div class="w-full lg:flex justify-around flex-wrap">
-                    <a href="mailto:imperycza@gmail.com"
+                    <a href="mailto:ryczaimper@gmail.com"
+                        @click="trackFooterClick('Email')"
                         class="flex items-center relative flex-wrap justify-center text-center text-blue text-xl font-medium">Contacto
                         <span class="inline-block"><img src="@/assets/svg/ICONO_MAIL.svg" width="25px"
                                 class="mx-2" /></span>
-                        imperycza@gmail.com
+                        ryczaimper@gmail.com
                     </a>
 
                     <a href="https://www.facebook.com/RYCZAImper" target="_blank"
+                        @click="trackFooterClick('Facebook')"
                         class="flex items-center relative flex-wrap justify-center text-center text-blue text-xl font-medium"> Siguenos!
                         <span class="inline-block"><img src="@/assets/svg/ICONO_FB.svg" width="25px"
                                 class="mx-2" /></span>
@@ -55,10 +57,20 @@
     </footer>
 </template>
 <script>
+import { trackGTMEvent } from "@/utils/gtm";
+
 export default {
     data() {
         return {};
     },
+    methods: {
+        trackFooterClick(label) {
+            trackGTMEvent('footer_click', {
+                label: label,
+                category: 'footer'
+            });
+        }
+    }
 };
 </script>
 <style>
@@ -73,8 +85,12 @@ export default {
     width: 100%;
 }
 
-.footer-logo--png {
-    transform: scale(1.35);
+.footer-logo--pazti {
+    transform: scale(0.5);
+}
+
+.footer-logo--imperquimia {
+    transform: scale(3.5);
 }
 
 @media (min-width: 768px) {
@@ -83,6 +99,12 @@ export default {
     }
     .footer-logo--png {
         transform: scale(1.4);
+    }
+    .footer-logo--pazti {
+        transform: scale(0.8);
+    }
+    .footer-logo--imperquimia {
+        transform: scale(2.5);
     }
 }
 

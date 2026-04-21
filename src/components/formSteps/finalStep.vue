@@ -17,6 +17,7 @@
       </p>
 
       <a :href="whatsappUrl" target="_blank"
+        @click="trackWhatsAppClick"
         class="button-form font-bold flex items-center justify-center gap-3 rounded-xl text-white transition-all hover:scale-105 active:scale-95 shadow-lg w-full"
         :class="isChatMode ? 'text-base py-3 px-4' : 'text-twenty px-8 py-4'"
         style="background-color: #25D366;">
@@ -39,6 +40,7 @@
 
 <script>
 import LazyVimeoVideo from "@/components/Common/LazyVimeoVideo.vue";
+import { trackGTMEvent } from "@/utils/gtm";
 
 export default {
   name: "finalStep",
@@ -53,6 +55,14 @@ export default {
     isChatMode: {
       type: Boolean,
       default: false
+    }
+  },
+  methods: {
+    trackWhatsAppClick() {
+      trackGTMEvent('whatsapp_click', {
+        category: 'conversion',
+        label: this.isChatMode ? 'Chatbot' : 'Stepper Form'
+      });
     }
   }
 };

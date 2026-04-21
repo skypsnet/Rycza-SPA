@@ -1,6 +1,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted, watch, nextTick, computed } from 'vue';
 import axios from 'axios';
+import { trackGTMEvent } from "@/utils/gtm";
+
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import FirstStep from "@/components/formSteps/firstStep.vue";
 import FinalStep from "@/components/formSteps/finalStep.vue";
@@ -213,10 +215,47 @@ const selectProduct = (prod) => {
     }
 };
 
-const prefillData = () => ({
-    name: datosDelCliente.value.nombre,
-    email: datosDelCliente.value.correo,
-});
+const sendForm = async () => {
+    isLoading.value = true;
+    try {
+        const response = await axios.post("https://api.web3forms.com/submit", {
+            access_key: "46628c94-552b-46ef-8312-95e72743eca0",
+            subject: `Nuevo Presupuesto Chat RYCZA: ${datosDelCliente.value.nombre}`,
+            from_name: datosDelCliente.value.nombre,
+            Nombre: datosDelCliente.value.nombre,
+            Telefono: datosDelCliente.value.telefono,
+            Correo: datosDelCliente.value.correo,
+            "Goteras o Humedad": goterasHumedadEnDomicilio.value,
+            "Tipo de Construcción": tipoDeConstruccion.value === 'Otro' ? otroTipoDeConstruccion.value : tipoDeConstruccion.value,
+            Identificación: identificacion.value,
+            "Productos de Interés": productoInteresado.value.join(", ") + (otroTipodeProductoInteresado.value ? `, ${otroTipodeProductoInteresado.value}` : ""),
+            "Mantenimiento Preventivo": mantenimientoPreventivo.value,
+            Ubicación: dondeRequieresElServicio.value.ubicacion,
+            Colonia: dondeRequieresElServicio.value.colonia,
+            Calle: dondeRequieresElServicio.value.calle,
+            "No. Exterior": dondeRequieresElServicio.value.noExterior,
+            "No. Interior": dondeRequieresElServicio.value.noInterior,
+            Referencias: dondeRequieresElServicio.value.referencias,
+        });
+
+        if (response.status === 200) {
+            console.log("Chatbot form successfully submitted to Web3Forms");
+            trackGTMEvent('form_submission_success', {
+                category: 'conversion',
+                label: 'Chatbot Form'
+            });
+        }
+    } catch (error) {
+        console.error("Error submitting chatbot form", error);
+        trackGTMEvent('form_submission_error', {
+            category: 'error',
+            label: 'Chatbot Form'
+        });
+    } finally {
+        isLoading.value = false;
+        nextStep('Datos enviados');
+    }
+};
 
 const formattedWhatsappUrl = computed(() => {
     const baseUrl = "https://wa.me/529983717937?text=";
@@ -306,8 +345,8 @@ const formattedWhatsappUrl = computed(() => {
                                 <input v-model="datosDelCliente.nombre" placeholder="👤 Nombre Completo" class="w-full border-gray-200 p-2.5 rounded-lg text-sm focus:ring-2 focus:ring-blue focus:border-transparent outline-none"/>
                                 <input v-model="datosDelCliente.telefono" placeholder="📞 Teléfono" class="w-full border-gray-200 p-2.5 rounded-lg text-sm focus:ring-2 focus:ring-blue focus:border-transparent outline-none"/>
                                 <input v-model="datosDelCliente.correo" placeholder="📧 Correo" class="w-full border-gray-200 p-2.5 rounded-lg text-sm focus:ring-2 focus:ring-blue focus:border-transparent outline-none"/>
-                                <button @click="nextStep('Datos enviados')" class="w-full bg-orange hover:bg-orange/90 text-white py-3 rounded-xl text-sm font-bold shadow-md transition-all">
-                                    Finalizar y Contactar
+                                <button @click="sendForm()" :disabled="isLoading" class="w-full bg-orange hover:bg-orange/90 text-white py-3 rounded-xl text-sm font-bold shadow-md transition-all disabled:opacity-50">
+                                    {{ isLoading ? 'Enviando...' : 'Finalizar y Contactar' }}
                                 </button>
                             </div>
 

@@ -24,6 +24,7 @@
                         </p>
                         <br />
                         <router-link to="/Contacto"
+                            @click="trackCTAClick('Contáctanos Banner')"
                             class="button button--orange  border-white ml-0 !mr-auto lg:text-twenty-five-md text-twenty-five">Contáctanos</router-link>
                         <br />
                     </div>
@@ -47,11 +48,21 @@
 </template>
 
 <script>
+import { trackGTMEvent } from "@/utils/gtm";
+
 export default {
     name: "firstBanner",
     data() {
         return {};
     },
+    methods: {
+        trackCTAClick(label) {
+            trackGTMEvent('cta_click', {
+                label: label,
+                category: 'conversion'
+            });
+        }
+    }
 };
 </script>
 <style>

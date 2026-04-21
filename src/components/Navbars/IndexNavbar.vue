@@ -60,14 +60,18 @@
                         <div class="h5  w-[50%] font-weight-normal text-muted px-5  items-center">
                             <div class="m-auto xl:mr-5 xl:ml-2 flex justify-center xl:justify-evenly xl:gap-7 ">
                                 <router-link :to="{ name: 'LandingPage' }"
+                                    @click="trackNavClick('Inicio')"
                                     class="p-2  font-medium uppercase   text-twenty" :class="textWhite">
                                     Inicio
                                 </router-link>
                                 <router-link :to="{ name: 'OurCLients' }"
+                                    @click="trackNavClick('Nuestros Clientes')"
                                     class="p-2  font-medium uppercase  text-twenty  " :class="textWhite">
                                     NUESTROS CLIENTES
                                 </router-link>
-                                <router-link :to="{ name: 'Contacto' }" class="p-1 rounded-[12px] py-2 xl:px-6 font-medium	   text-twenty text-center"
+                                <router-link :to="{ name: 'Contacto' }" 
+                                    @click="trackNavClick('Contáctanos')"
+                                    class="p-1 rounded-[12px] py-2 xl:px-6 font-medium	   text-twenty text-center"
                                     :class="blackLogo ? 'text-blue border border-blue' : 'bg-blue text-white'">
                                     CONTÁCTANOS
                                 </router-link>
@@ -108,6 +112,8 @@
 </template>
 
 <script>
+import { trackGTMEvent } from "@/utils/gtm";
+
 export default {
     data() {
         return {
@@ -150,6 +156,12 @@ export default {
         handleScroll() {
             this.scrolled = window.scrollY > 550;
 
+        },
+        trackNavClick(label) {
+            trackGTMEvent('nav_click', {
+                label: label,
+                category: 'navigation'
+            });
         }
     },
     mounted() {
